@@ -85,6 +85,19 @@
         "runtime": {
           "bin/placeholder/DevFreela.Core.dll": {}
         }
+      },
+      "DevFreela.Insfrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DevFreela.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DevFreela.Insfrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevFreela.Insfrastructure.dll": {}
+        }
       }
     }
   },
@@ -200,11 +213,17 @@
       "type": "project",
       "path": "../DevFreela.Core/DevFreela.Core.csproj",
       "msbuildProject": "../DevFreela.Core/DevFreela.Core.csproj"
+    },
+    "DevFreela.Insfrastructure/1.0.0": {
+      "type": "project",
+      "path": "../DevFreela.Insfrastructure/DevFreela.Insfrastructure.csproj",
+      "msbuildProject": "../DevFreela.Insfrastructure/DevFreela.Insfrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DevFreela.Core >= 1.0.0",
+      "DevFreela.Insfrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -245,6 +264,9 @@
           "projectReferences": {
             "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
               "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+            },
+            "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Insfrastructure\\DevFreela.Insfrastructure.csproj": {
+              "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Insfrastructure\\DevFreela.Insfrastructure.csproj"
             }
           }
         }
