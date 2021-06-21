@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Core.Entites
 {
-    public abstract class BaseEntity
+    public class UserSkill : BaseEntity
     {
-        protected BaseEntity() { }
-        public int Id { get; private set; }
-
+        public int IdUser { get; private set; }
+        public int IdSkill { get; private set; }
     }
 }
