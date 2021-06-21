@@ -1,0 +1,7 @@
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.csprojAssemblyReference.cache
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.AssemblyInfoInputs.cache
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.AssemblyInfo.cs
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.csproj.CoreCompileInputs.cache
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.MvcApplicationPartsAssemblyInfo.cache
