@@ -76,6 +76,20 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "DevFreela.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DevFreela.Core": "1.0.0",
+          "DevFreela.Insfrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DevFreela.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevFreela.Application.dll": {}
+        }
+      },
       "DevFreela.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -209,6 +223,11 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "DevFreela.Application/1.0.0": {
+      "type": "project",
+      "path": "../DevFreela.Application/DevFreela.Application.csproj",
+      "msbuildProject": "../DevFreela.Application/DevFreela.Application.csproj"
+    },
     "DevFreela.Core/1.0.0": {
       "type": "project",
       "path": "../DevFreela.Core/DevFreela.Core.csproj",
@@ -222,6 +241,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DevFreela.Application >= 1.0.0",
       "DevFreela.Core >= 1.0.0",
       "DevFreela.Insfrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
@@ -262,6 +282,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
+              "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj"
+            },
             "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
               "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
             },
