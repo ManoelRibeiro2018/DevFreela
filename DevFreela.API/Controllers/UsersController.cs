@@ -29,7 +29,7 @@ namespace DevFreela.API.Controllers
         [HttpPut("{id}/login")]
         public IActionResult Login([FromBody] LoginModel loginModel)
         {
-            return Ok()
+            return Ok();
         }
     }
 

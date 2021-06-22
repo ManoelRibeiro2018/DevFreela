@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Insfrastructure.Persistence
 {
-    class DevFreelaDbContext
+    public class DevFreelaDbContext
     {
         public DevFreelaDbContext()
         {

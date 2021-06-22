@@ -11,7 +11,7 @@ namespace DevFreela.Core.Enums
         Created = 0,
         InProgress = 1,
         suspended = 2,
-        Concelled = 3,
-        Finishd = 4
+        Cancelled = 3,
+        Finished = 4
     }
 }

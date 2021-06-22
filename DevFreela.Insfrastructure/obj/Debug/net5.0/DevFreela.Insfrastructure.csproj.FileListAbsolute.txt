@@ -1,0 +1,15 @@
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.csprojAssemblyReference.cache
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.AssemblyInfoInputs.cache
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.AssemblyInfo.cs
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\bin\Debug\net5.0\DevFreela.Insfrastructure.deps.json
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\bin\Debug\net5.0\DevFreela.Insfrastructure.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\bin\Debug\net5.0\ref\DevFreela.Insfrastructure.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\bin\Debug\net5.0\DevFreela.Insfrastructure.pdb
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\bin\Debug\net5.0\DevFreela.Core.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\bin\Debug\net5.0\DevFreela.Core.pdb
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.csproj.CopyComplete
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\ref\DevFreela.Insfrastructure.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Insfrastructure\obj\Debug\net5.0\DevFreela.Insfrastructure.pdb
