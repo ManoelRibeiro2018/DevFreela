@@ -1619,7 +1619,8 @@
         "dependencies": {
           "Dapper": "2.0.90",
           "DevFreela.Core": "1.0.0",
-          "DevFreela.Insfrastructure": "1.0.0"
+          "DevFreela.Insfrastructure": "1.0.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0"
         },
         "compile": {
           "bin/placeholder/DevFreela.Application.dll": {}

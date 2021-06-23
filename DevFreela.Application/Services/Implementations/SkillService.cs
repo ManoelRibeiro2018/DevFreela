@@ -12,12 +12,12 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Application.Services.Implementations
 {
-    public class Skillservice : ISkillService
+    public class SkillService : ISkillService
     {
         private readonly DevFreelaDbContext _dbcontext;
         private readonly string _connectionString;
 
-        public Skillservice(DevFreelaDbContext dbcontext, IConfiguration configuration)
+        public SkillService(DevFreelaDbContext dbcontext, IConfiguration configuration)
         {
             _dbcontext = dbcontext;
             _connectionString = configuration.GetConnectionString("DevFreellaCs");
