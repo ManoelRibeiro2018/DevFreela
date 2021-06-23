@@ -23,6 +23,7 @@ namespace DevFreela.Application.Services.Implementations
         {
             var user = new User(inputModel.FullName,inputModel.Email, inputModel.BirthDate);
             _dbContext.Users.Add(user);
+            _dbContext.SaveChanges();
             return user.Id;
         }
         public void Update(int id, UserUpdateModel updateModel)
@@ -32,6 +33,7 @@ namespace DevFreela.Application.Services.Implementations
             if (user != null)
             {
                 user.Update(updateModel.FullName, updateModel.BirthDate);
+                _dbContext.SaveChanges();
             }
         }
 
@@ -42,6 +44,7 @@ namespace DevFreela.Application.Services.Implementations
             if (user != null)
             {
                 user.Deactivate();
+                _dbContext.SaveChanges();
             }
         }
 
