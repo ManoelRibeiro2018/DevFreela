@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "L1cYP0Sm/dHsKTmJ6KH2grMgm/OxwWMN7eBmb3LRVFO8CypxnQhiS95fW4KjjljooIIjGucLicKIPUAcKdvxtw==",
+  "dgSpecHash": "wsew7ZFZHypjsxwC3+Cw9Ec/A2l/AHZxZYmE4tIOxi3777GiDrebiMVyk0TOlElycZc7VTmeWcoqs6Uib18Bgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

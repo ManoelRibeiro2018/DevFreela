@@ -13,4 +13,9 @@
     <ProjectReference Include="..\DevFreela.Insfrastructure\DevFreela.Insfrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Querys\" />
+  </ItemGroup>
+
 </Project>
