@@ -24,40 +24,7 @@ namespace DevFreela.Application.Services.Implementations
             _dbContext = devFreelaDbContext;
             _connectionString = configuration.GetConnectionString("DevFreelaCs");
         }
-        public int Create(ProjectInputModel inputModel)
-        {
-            var project = new Project(inputModel.Title, inputModel.Description, inputModel.IdClient, inputModel.IdFreelancer, inputModel.TotalCost);
-            _dbContext.Projects.Add(project);
-            _dbContext.SaveChanges();
-            return project.Id;
-        }
-        public void CreateComment(CommentInputModel inputModel)
-        {
-            var comment = new ProjectComment(inputModel.Content, inputModel.IdProject, inputModel.IdUser);
-            _dbContext.ProjectComment.Add(comment);
-            _dbContext.SaveChanges();
-        }
-        public void Update(UpdateProjectInputModel inputModel)
-        {
-            var project = _dbContext.Projects.SingleOrDefault(p => p.Id == inputModel.Id); 
-            if (project != null)
-            {
-                project.Update(inputModel.Title, inputModel.Description, inputModel.TotalCost);
-                _dbContext.SaveChanges();
-            }
-
-        }
-        public void Delete(int id)
-        {
-            var project = _dbContext.Projects.SingleOrDefault(p => p.Id == id);
-
-            if (project != null)
-            {
-                project.Cancel();
-                _dbContext.SaveChanges();
-            }
-        }
-
+     
         public List<ProjectViewModel> GetAll()
         {
             using (var sqlconnection = new SqlConnection(_connectionString))

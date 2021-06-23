@@ -10,11 +10,7 @@ namespace DevFreela.Application.Services.Interfaces
 {
     public interface IUserService
     {
-        int Create(UserInputModel inputModel);
-        void Update(int id, UserUpdateModel updateModel);
-        void Delete(int id);
-       List<UserViewModel> GetAll();
+        List<UserViewModel> GetAll();
         UserViewModel GetById(int id);
-
     }
 }

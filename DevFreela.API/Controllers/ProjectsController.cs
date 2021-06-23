@@ -1,5 +1,7 @@
 ﻿using DevFreela.API.Models;
+using DevFreela.Application.Commands.CreateCommentProject;
 using DevFreela.Application.Commands.CreateProject;
+using DevFreela.Application.Commands.UpdateProject;
 using DevFreela.Application.InputModel;
 using DevFreela.Application.Services.Interfaces;
 using MediatR;
@@ -26,7 +28,7 @@ namespace DevFreela.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult  Get()
+        public IActionResult Get()
         {
             var projects = _projectService.GetAll();
             return Ok(projects);
@@ -42,11 +44,7 @@ namespace DevFreela.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreateProjectCommand  command)
         {
-
-
             var id = await _mediator.Send(command);
-
-
             return CreatedAtAction(
                 nameof(GetById),
                 new { id },
@@ -55,25 +53,28 @@ namespace DevFreela.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] UpdateProjectInputModel inputModel)
+        public async Task<IActionResult> Put(int id, [FromBody] UpdateProjectCommand command)
         {
-            // Return BadRequeste();
+            if (id <= 0)
+            {
+                return BadRequest(); 
+            }
 
-            _projectService.Update(inputModel);
+           await _mediator.Send(command);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            _projectService.Delete(id);
+            _mediator.Send(id);
             return NoContent();
         }
 
         [HttpPost("{id}/comments")]
-        public IActionResult PostComment(int id, [FromBody] CommentInputModel  inputModel)
+        public async Task<IActionResult> PostComment(int id, [FromBody] CreateCommentProjectCommand command)
         {
-           _projectService.CreateComment(inputModel);
+            await  _mediator.Send(command);
             return NoContent();
         }
 
