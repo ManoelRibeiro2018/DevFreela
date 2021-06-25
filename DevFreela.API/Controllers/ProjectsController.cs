@@ -3,6 +3,7 @@ using DevFreela.Application.Commands.CreateCommentProject;
 using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Commands.UpdateProject;
 using DevFreela.Application.InputModel;
+using DevFreela.Application.Querys.GetAllProjects;
 using DevFreela.Application.Services.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -28,9 +29,10 @@ namespace DevFreela.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get(string query)
         {
-            var projects = _projectService.GetAll();
+            var getAll = new GetAllProjectsQuery(query);
+            var projects = await  _mediator.Send(getAll);
             return Ok(projects);
         }
 

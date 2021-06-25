@@ -22,7 +22,7 @@ namespace DevFreela.Application.Services.Implementations
     
         public List<UserViewModel> GetAll()
         {
-            var user = _dbContext.Users.Select(u => new UserViewModel(u.Id, u.FullName, u.Email, u.BirthDate)).ToList();
+            var user = _dbContext.Users.Select(u => new UserViewModel( u.FullName, u.Email)).ToList();
             return user;
         }
 
@@ -30,7 +30,7 @@ namespace DevFreela.Application.Services.Implementations
         {
             var user = _dbContext.Users.SingleOrDefault(u => u.Id == id);
 
-            var userView = new UserViewModel(user.Id,user.FullName, user.Email, user.BirthDate);
+            var userView = new UserViewModel(user.FullName, user.Email);
             return userView;
         }
 

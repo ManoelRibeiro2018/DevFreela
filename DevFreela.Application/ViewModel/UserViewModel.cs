@@ -8,17 +8,13 @@ namespace DevFreela.Application.ViewModel
 {
     public class UserViewModel
     {
-        public UserViewModel(int id, string fullName, string email, DateTime birthDate)
+        public UserViewModel( string fullName, string email)
         {
-            Id = id;
             FullName = fullName;
             Email = email;
-            BirthDate = birthDate;
         }
 
-        public int Id { get; set; }
         public string FullName { get; private set; }
         public string Email { get; private set; }
-        public DateTime BirthDate { get; private set; }
     }
 }

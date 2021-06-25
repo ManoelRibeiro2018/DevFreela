@@ -14,7 +14,7 @@ namespace DevFreela.Application.ViewModel
             Title = title;
             CreatedAd = createdAd;
         }
-        public int Id { get; set; }
+        public int Id { get; private set; }
 
         public string Title { get; private set; }
         public DateTime CreatedAd { get; private set; }

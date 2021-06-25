@@ -10,8 +10,10 @@ namespace DevFreela.Application.Commands.CreateUser
     public class CreateUserCommand : IRequest<int>
     {
         public int Id { get; set; }
-        public string FullName { get; set; }
-        public string Email { get; set; }
-        public DateTime BirthDate { get; set; }
+        public string FullName { get;  set; }
+        public string Email { get;  set; }
+        public DateTime BirthDate { get;  set; }
+        public DateTime CreateAt { get; private set; }
+        public bool Active { get; private set; }
     }
 }

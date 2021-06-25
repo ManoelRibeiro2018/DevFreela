@@ -1,6 +1,7 @@
 ﻿using DevFreela.API.Models;
 using DevFreela.Application.Commands.CreateUser;
 using DevFreela.Application.InputModel;
+using DevFreela.Application.Querys.GetUser;
 using DevFreela.Application.Services.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -14,25 +15,25 @@ namespace DevFreela.API.Controllers
     [Route("api/users")]
     public class UsersController: ControllerBase
     {
-        private readonly IUserService _userService;
 
         public IMediator _mediator;
 
-        public UsersController(IUserService userService, IMediator mediator)
+        public UsersController( IMediator mediator)
         {
-            _userService = userService;
             _mediator = mediator;
         }
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            return Ok();
+            var query = new GetUserByIdQuery(id);
+            var user = await _mediator.Send(query);
+            return Ok(user);
         }
         
         [HttpPost]
-        public IActionResult Post([FromBody] CreateUserCommand  command)
+        public async Task<IActionResult> Post([FromBody] CreateUserCommand  command)
         {
-            var id = _mediator.Send(command);
+            var id = await _mediator.Send(command);
 
             return CreatedAtAction(nameof(GetById), new { id}, command);
         }

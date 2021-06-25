@@ -37,14 +37,16 @@ namespace DevFreela.API
            
             services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevFreellaCs"))) ;
            
-            services.AddScoped<IProjectService, ProjectService>();
             services.AddScoped<IUserService, UserService>();
-            services.AddScoped<ISkillService, SkillService>();
 
+            services.AddScoped<IProjectService, ProjectService>();
             services.AddControllers();
 
             services.AddMediatR(typeof(CreateProjectCommand));
-
+            services.AddControllersWithViews()
+               .AddNewtonsoftJson(options =>
+                   options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+           );
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DevFreela.API", Version = "v1" });

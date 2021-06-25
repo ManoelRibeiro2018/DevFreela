@@ -1,14 +1,14 @@
 ﻿using DevFreela.Application.InputModel;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Services.Interfaces
+namespace DevFreela.Application.Querys.GetAllSkills
 {
-     public interface ISkillService
+    public class GetAllSkillsQuery : IRequest<List<SkillViewModel>>
     {
-        List<SkillViewModel> GetAll();
     }
 }

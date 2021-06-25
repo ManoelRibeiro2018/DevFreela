@@ -22,22 +22,10 @@ namespace DevFreela.Application.Services.Implementations
         public ProjectService(DevFreelaDbContext devFreelaDbContext, IConfiguration configuration)
         {
             _dbContext = devFreelaDbContext;
-            _connectionString = configuration.GetConnectionString("DevFreelaCs");
+            _connectionString = configuration.GetConnectionString("DevFreellaCs");
         }
      
-        public List<ProjectViewModel> GetAll()
-        {
-            using (var sqlconnection = new SqlConnection(_connectionString))
-            {
-                sqlconnection.Open();
-                var script = "Select Id, Title, CreatedAd from Project";
-                return sqlconnection.Query<ProjectViewModel>(script).ToList();
-            }
-
-
-            //var projects = _dbContext.Projects.Select(p => new ProjectViewModel(p.Id, p.Title, p.CreatedAt)).ToList();
-            //return projects;
-        }
+      
 
         public ProjectDetailsViewModel GetById(int id)
         {
