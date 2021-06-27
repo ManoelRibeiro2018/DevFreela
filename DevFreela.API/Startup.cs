@@ -43,6 +43,7 @@ namespace DevFreela.API
 
             services.AddScoped<IProjectService, ProjectService>();
             services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<ISkillRepository, SkillsRepository>();
             services.AddControllers();
 
             services.AddMediatR(typeof(CreateProjectCommand));

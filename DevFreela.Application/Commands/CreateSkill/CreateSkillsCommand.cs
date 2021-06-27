@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Application.Commands.CreateSkill
 {
-    public class CreateSkillsCommand : IRequest<int>
+    public class CreateSkillsCommand : IRequest<Unit>
     {
-        public string Description { get; private set; }
-        public int IdUSer { get; set; }
+        public int Id { get; set; }
+        public string Description { get;  set; }
 
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DevFreela.Application.InputModel;
+using DevFreela.Core.DTOs;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Application.Querys.GetAllSkills
 {
-    public class GetAllSkillsQuery : IRequest<List<SkillViewModel>>
+    public class GetAllSkillsQuery : IRequest<List<SkillDTO>>
     {
     }
 }
