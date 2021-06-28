@@ -71,3 +71,6 @@ C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

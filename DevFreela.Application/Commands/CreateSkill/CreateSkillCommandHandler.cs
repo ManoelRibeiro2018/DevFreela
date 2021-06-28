@@ -24,7 +24,7 @@ namespace DevFreela.Application.Commands.CreateSkill
         public async Task<Unit> Handle(CreateSkillsCommand request, CancellationToken cancellationToken)
         {
             var skill = new SkillDTO(request.Id, request.Description);
-            await _skillRepository.Create(skill);
+            await _skillRepository.CreateAsync(skill);
             return Unit.Value;
         }
     }

@@ -16,7 +16,7 @@ namespace DevFreela.Insfrastructure.Persistence.Repositories
         {
             _dbContext = dbContext;
         }
-        public async Task<List<Project>> GetAll()
+        public async Task<List<Project>> GetAllAsync()
         {
             return await _dbContext.Projects.ToListAsync();
         }
