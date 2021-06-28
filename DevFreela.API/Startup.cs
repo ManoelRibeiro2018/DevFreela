@@ -47,7 +47,7 @@ namespace DevFreela.API
            // services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISkillRepository, SkillsRepository>();
             services.AddControllers()
-                .AddFluentValidation( fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>());
+                .AddFluentValidation( fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>(lifetime: ServiceLifetime.Transient));
 
             services.AddMediatR(typeof(CreateProjectCommand));
             services.AddControllersWithViews()
