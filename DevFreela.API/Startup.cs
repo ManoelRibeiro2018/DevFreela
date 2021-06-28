@@ -4,6 +4,7 @@ using DevFreela.Application.Services.Implementations;
 using DevFreela.Application.Services.Interfaces;
 using DevFreela.Application.Validators;
 using DevFreela.Core.Repositories;
+using DevFreela.Infrastructure.Persistence.Repositories;
 using DevFreela.Insfrastructure.Persistence;
 using DevFreela.Insfrastructure.Persistence.Repositories;
 using FluentValidation.AspNetCore;
@@ -41,10 +42,9 @@ namespace DevFreela.API
            
             services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevFreellaCs"))) ;
            
-            services.AddScoped<IUserService, UserService>();
 
             services.AddScoped<IProjectService, ProjectService>();
-           // services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISkillRepository, SkillsRepository>();
             services.AddControllers()
                 .AddFluentValidation( fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>(lifetime: ServiceLifetime.Transient));
