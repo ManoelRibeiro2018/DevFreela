@@ -1,3 +1,4 @@
+using DevFreela.API.Filters;
 using DevFreela.API.Models;
 using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Services.Implementations;
@@ -50,7 +51,7 @@ namespace DevFreela.API
                 .AddFluentValidation( fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>(lifetime: ServiceLifetime.Transient));
 
             services.AddMediatR(typeof(CreateProjectCommand));
-            services.AddControllersWithViews()
+            services.AddControllersWithViews(options => options.Filters.Add(typeof(ValidationFilter)))
                .AddNewtonsoftJson(options =>
                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
            );
