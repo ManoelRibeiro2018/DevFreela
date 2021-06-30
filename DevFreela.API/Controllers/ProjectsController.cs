@@ -57,9 +57,15 @@ namespace DevFreela.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreateProjectCommand command)
         {
-            var id = await _mediator.Send(command);
+            if (ModelState.IsValid)
+            {
+                var id = await _mediator.Send(command);
 
-            return CreatedAtAction(nameof(GetById), new { id = id }, command);
+                return CreatedAtAction(nameof(GetById), new { id = id }, command); 
+            }
+            var mensage = ModelState.SelectMany(ms => ms.Value.Errors).Select(er => er.ErrorMessage);
+
+            return BadRequest(mensage);
         }
 
         // api/projects/2
@@ -75,11 +81,16 @@ namespace DevFreela.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var command = new DeleteProjectCommand(id);
+            if (ModelState.IsValid)
+            {
+                var command = new DeleteProjectCommand(id);
 
-            await _mediator.Send(command);
+                await _mediator.Send(command);
 
-            return NoContent();
+                return NoContent(); 
+            }
+            var menssage = ModelState.SelectMany(ms => ms.Value.Errors).Select(err => err.ErrorMessage);
+            return BadRequest(menssage);
         }
 
         // api/projects/1/comments POST
