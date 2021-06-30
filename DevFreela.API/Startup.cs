@@ -43,7 +43,7 @@ namespace DevFreela.API
             services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevFreellaCs"))) ;
            
 
-            services.AddScoped<IProjectService, ProjectService>();
+            services.AddScoped<IProjectRepository, ProjectRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISkillRepository, SkillsRepository>();
             services.AddControllers()

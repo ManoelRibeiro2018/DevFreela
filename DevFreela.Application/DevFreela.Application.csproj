@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Querys\GetProjectById\" />
     <Folder Include="Querys\GetUserById\" />
   </ItemGroup>
 
