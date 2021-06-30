@@ -89,8 +89,7 @@ namespace DevFreela.API.Controllers
 
                 return NoContent(); 
             }
-            var menssage = ModelState.SelectMany(ms => ms.Value.Errors).Select(err => err.ErrorMessage);
-            return BadRequest(menssage);
+            
         }
 
         // api/projects/1/comments POST
