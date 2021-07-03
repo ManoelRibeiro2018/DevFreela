@@ -74,3 +74,4 @@ C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
