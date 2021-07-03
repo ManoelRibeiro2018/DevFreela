@@ -18,7 +18,8 @@ namespace DevFreela.Application.Validators
               .WithMessage("E-mail não válido!");
 
             RuleFor(p => p.Password)
-                .Must(ValidPassword)
+               // .Must(ValidPassword)
+               .NotNull()
                 .WithMessage("Senha deve conter pelo menos 8 caracteres, um número, uma letra maiúscula, uma minúscula, e um caractere especial");
 
             RuleFor(p => p.FullName)

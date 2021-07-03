@@ -34,8 +34,6 @@
       "DevFreela.API/1.0.0": {
         "dependencies": {
           "DevFreela.Application": "1.0.0",
-          "DevFreela.Core": "1.0.0",
-          "DevFreela.Insfrastructure": "1.0.0",
           "FluentValidation.AspNetCore": "10.2.3",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.7",

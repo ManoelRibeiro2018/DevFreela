@@ -1,5 +1,6 @@
 ﻿using DevFreela.API.Models;
 using DevFreela.Application.Commands.CreateUser;
+using DevFreela.Application.Commands.LoginUser;
 using DevFreela.Application.InputModel;
 using DevFreela.Application.Querys.GetUser;
 using DevFreela.Application.Services.Interfaces;
@@ -43,10 +44,18 @@ namespace DevFreela.API.Controllers
             return BadRequest(menssages);
         }
 
-        [HttpPut("{id}/login")]
-        public IActionResult Login([FromBody] LoginModel loginModel)
+        [HttpPost("email/{email}/password/{password}")]
+        public async Task<IActionResult> Login(string email, string password)
         {
-            return Ok();
+            var command =  new LoginUserCommand {Email = email, Password = password };
+            var user = await _mediator.Send(command);
+
+            if (user == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(user);
         }
     }
 

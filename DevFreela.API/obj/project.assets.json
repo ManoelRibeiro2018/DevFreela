@@ -5868,8 +5868,6 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DevFreela.Application >= 1.0.0",
-      "DevFreela.Core >= 1.0.0",
-      "DevFreela.Insfrastructure >= 1.0.0",
       "FluentValidation.AspNetCore >= 10.2.3",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 9.0.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.7",
@@ -5916,12 +5914,6 @@
           "projectReferences": {
             "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
               "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj"
-            },
-            "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-              "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
-            },
-            "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Insfrastructure\\DevFreela.Insfrastructure.csproj": {
-              "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Insfrastructure\\DevFreela.Insfrastructure.csproj"
             }
           }
         }

@@ -37,12 +37,6 @@
             "projectReferences": {
               "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
                 "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj"
-              },
-              "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
-              },
-              "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Insfrastructure\\DevFreela.Insfrastructure.csproj": {
-                "projectPath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.Insfrastructure\\DevFreela.Insfrastructure.csproj"
               }
             }
           }
