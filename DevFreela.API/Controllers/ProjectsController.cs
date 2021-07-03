@@ -10,6 +10,7 @@ using DevFreela.Application.Queries.GetProjectById;
 using DevFreela.Application.Querys.GetAllProjects;
 using DevFreela.Application.Services.Interfaces;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System;
@@ -20,6 +21,7 @@ using System.Threading.Tasks;
 namespace DevFreela.API.Controllers
 {
     [Route("api/projects")]
+    [Authorize]
     public class ProjectsController : ControllerBase
     {
         public readonly IMediator _mediator;

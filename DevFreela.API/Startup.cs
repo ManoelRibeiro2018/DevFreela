@@ -64,6 +64,7 @@ namespace DevFreela.API
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DevFreela.API", Version = "v1" });
+              
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -85,7 +86,7 @@ namespace DevFreela.API
                                 Id = "Bearer"
                             }
                         },
-                        new string[]{}
+                        Array.Empty<string>()
                     }
                 }); 
             });
@@ -122,9 +123,10 @@ namespace DevFreela.API
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
-            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
