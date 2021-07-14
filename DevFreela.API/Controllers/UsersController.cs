@@ -41,9 +41,9 @@ namespace DevFreela.API.Controllers
 
         [HttpPost("email/{email}/password/{password}")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
         {
-            var command = new LoginUserCommand { Email = email, Password = password };
+          //  var command = new LoginUserCommand { Email = email, Password = password };
             var user = await _mediator.Send(command);
 
             if (user == null)
