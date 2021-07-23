@@ -9,3 +9,4 @@ C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Core\obj\Debug\net
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Core\obj\Debug\net5.0\DevFreela.Core.dll
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Core\obj\Debug\net5.0\ref\DevFreela.Core.dll
 C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Core\obj\Debug\net5.0\DevFreela.Core.pdb
+C:\Users\manoel.ribeiro.neto\source\repos\DevFreela\DevFreela.Core\obj\Debug\net5.0\DevFreela.Core.csprojAssemblyReference.cache
