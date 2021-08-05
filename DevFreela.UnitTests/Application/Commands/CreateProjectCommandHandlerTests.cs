@@ -1,4 +1,8 @@
-﻿using System;
+﻿using DevFreela.Application.Commands.CreateProject;
+using DevFreela.Core.Entites;
+using DevFreela.Core.Repositories;
+using Moq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +16,32 @@ namespace DevFreela.UnitTests.Application.Commands
         [Fact]
         public async Task InputDataIsOk_Executed_ReturnProjectId()
         {
+            //Arrange
+            var projectREpositoryMock = new Mock<IProjectRepository>();
 
+            var createProjectCommand = new CreateProjectCommand
+            {
+                Title = "Titulo de Teste",
+                Description = "Uma descrição",
+                TotalCost = 50000,
+                IdClient = 1,
+                IdFreelancer = 2
+            };
+
+            var createProjectCommandHandler = new CreateProjectCommandHandler(projectREpositoryMock.Object);
+
+
+            //Act
+
+            var id = await createProjectCommandHandler.Handle(createProjectCommand, new System.Threading.CancellationToken());
+
+
+            //Assert
+            Assert.True(id >= 0);
+
+            projectREpositoryMock.Verify(pr => pr.AddAsync(It.IsAny<Project>()), Times.Once);
+        
         }
+
     }
 }
