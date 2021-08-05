@@ -13,7 +13,10 @@ namespace DevFreela.UnitTests.Core
             var project = new Project("title project", "Description project", 1, 1, 10000);
 
             Assert.Equal(ProjectStatusEnum.Created, project.Status);
-            Assert.Null(project.StartedAt);
+            project.Start();
+
+            Assert.Equal(ProjectStatusEnum.InProgress, project.Status);
+            Assert.NotNull(project.StartedAt);
 
             Assert.NotNull(project.Title);
             Assert.NotEmpty(project.Title);
@@ -21,7 +24,6 @@ namespace DevFreela.UnitTests.Core
             Assert.NotNull(project.Description);
             Assert.NotEmpty(project.Description);
 
-            project.Start();
 
             Assert.Equal(ProjectStatusEnum.InProgress, project.Status);
             Assert.NotNull(project.StartedAt);
