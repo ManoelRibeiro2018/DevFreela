@@ -5,6 +5,7 @@ using DevFreela.Core.Repositories;
 using DevFreela.Core.Services;
 using DevFreela.Infrastructure.Persistence.Repositories;
 using DevFreela.Insfrastructure.Auth;
+using DevFreela.Insfrastructure.Payment;
 using DevFreela.Insfrastructure.Persistence;
 using DevFreela.Insfrastructure.Persistence.Repositories;
 using FluentValidation.AspNetCore;
@@ -38,12 +39,14 @@ namespace DevFreela.API
 
            
             services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevFreellaCs"))) ;
-           
+
+            services.AddHttpClient();
 
             services.AddScoped<IProjectRepository, ProjectRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISkillRepository, SkillsRepository>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IPaymentService, PaymentService>();
             services.AddControllers()
                 .AddFluentValidation( fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>(lifetime: ServiceLifetime.Transient));
 
@@ -52,6 +55,7 @@ namespace DevFreela.API
                .AddNewtonsoftJson(options =>
                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
            );
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DevFreela.API", Version = "v1" });

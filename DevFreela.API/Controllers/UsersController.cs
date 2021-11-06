@@ -39,7 +39,7 @@ namespace DevFreela.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id }, command);
         }
 
-        [HttpPost("email/{email}/password/{password}")]
+        [HttpPost("login")]
         [AllowAnonymous]
         public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
         {

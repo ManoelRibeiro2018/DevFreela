@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "guM/gq4/UwHI8e4CgVIj/+lI4Gp46vjs2HDVxR5klFCx0OFEIizIdsxbsfBSjinVX4dFD4HhIEADSD8UbukJ1w==",
+  "dgSpecHash": "O7IkaxiGcTWXI5/gdSzr4N1wI3nU2QBwHYOHyKoBejN1DOvssq9b9DKfmRSXXONqsWVa0ML5T0sW+Ny+0b5dRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\manoel.ribeiro.neto\\source\\repos\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\manoel.ribeiro.neto\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

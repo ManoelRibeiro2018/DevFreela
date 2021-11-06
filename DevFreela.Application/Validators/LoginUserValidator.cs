@@ -12,9 +12,9 @@ namespace DevFreela.Application.Validators
     {
         public LoginUserValidator()
         {
-            RuleFor(u => u.Email)
-                .EmailAddress()
-                .WithMessage("E-mail inválido");
+            //RuleFor(u => u.Email)
+            //    .EmailAddress()
+            //    .WithMessage("E-mail inválido");
 
             RuleFor(u => u.Password)
                 .NotEmpty()
