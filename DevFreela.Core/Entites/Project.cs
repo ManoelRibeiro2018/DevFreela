@@ -32,6 +32,13 @@ namespace DevFreela.Core.Entites
         public DateTime ? StartedAt { get; private set; }
         public DateTime ? FinishAt { get; private set; }
         public ProjectStatusEnum Status { get; set; }
+
+        public void SetPaymentPending()
+        {
+            Status = ProjectStatusEnum.PaymentPending;
+            FinishAt = null;
+        }
+
         public List<ProjectComment> ProjectComments { get; private set; }
 
         public void Cancel()
